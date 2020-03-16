@@ -159,7 +159,7 @@ input[type="radio"].visually-hidden {
 }
 
 /* button */
-.load-button {
+ /* .load-button {
   display: block;
   width: 164px;
   height: 60px;
@@ -175,9 +175,26 @@ input[type="radio"].visually-hidden {
   margin-top: 49px;
   margin-bottom: 70px;
   margin-left: 360px;
-}
+} */
 
 .load-button:hover,
 .load-button:focus {
   color: #03a9f4;
+} 
+
+.load-button {
+  width: 164px;
+  height: 60px;
+  border-width: 1px;
+  border-color: #626262;
+  padding: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #626262;
+  background-color: #ffffff;
+  cursor: pointer;
+  margin-top: 49px;
+  margin-bottom: 70px;
+  margin-left: 360px;
 }

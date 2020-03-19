@@ -182,6 +182,7 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   text-decoration: none;
   color: #626262;
+  background-color: #ffffff;
   /* margin-top: 49px;
   margin-bottom: 70px; */
   margin-left: 360px;

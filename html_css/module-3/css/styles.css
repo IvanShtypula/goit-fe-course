@@ -69,20 +69,24 @@ input[type="radio"].visually-hidden {
 .list-item-lifestyle {
   /* padding-left: 163px; */
   padding-right: 60px;
+  display: block;
 }
 
 .list-item-photodiary {
   padding-left: 60px;
   padding-right: 50px;
+  display: block;
 }
 
 .list-item-music {
   padding-left: 50px;
   padding-right: 45px;
+  display: block;
 }
 
 .list-item-travel {
   padding-left: 45px;
+  display: block;
 }
 
 .header-list a {
@@ -128,7 +132,7 @@ input[type="radio"].visually-hidden {
  внутри списка, хоть она и не имеет класса
  .content-list-item
   */
-.content-list-item:nth-last-child(-n + 3) {
+.content-list-item:nth-last-child(-n + 2) {
   margin-bottom: 0;
 }
 

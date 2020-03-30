@@ -206,6 +206,14 @@ h2::after {
   background: #1abc9c;
 }
 
+.product-list li :hover .product-price,
+.product-item li :focus .product-price {
+  background-color: #7fd9c7;
+  background: #7fd9c7;
+}
+
+
+
 
 
 /* news section */

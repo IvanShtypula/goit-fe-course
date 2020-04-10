@@ -90,31 +90,16 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
+.navigation-list-link {
+  display: block;
+}
+
 .navigation-list-link:hover {
   color: #1abc9c;
 }
 
-.contact-us {
-  padding-left: 17px;
-}
-.blog {
-  padding-right: 17px;
-  padding-left: 14px;
-}
-.shop {
-  padding-right: 14px;
-  padding-left: 15px;
-}
-.page {
-  padding-right: 15px;
-  padding-left: 19px;
-}
-.about-us {
-  padding-right: 19px;
-  padding-left: 17px;
-}
-.home {
-  padding-right: 17px;
+.navigation-list li:not(:last-child) {
+  margin-right: 35px;
 }
 
 /* main */

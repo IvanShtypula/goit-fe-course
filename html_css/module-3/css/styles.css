@@ -155,7 +155,6 @@ input[type="radio"].visually-hidden {
   font-family: "Ubuntu", sans-serif;
   margin: 0;
   margin-bottom: 26px;
-  /* padding-top: 30px; */
 }
 
 .content-title {
@@ -165,14 +164,13 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   margin: 0;
   margin-bottom: 25px;
-  /* padding-top: 26px; */
 }
 
 .content-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  /* padding-top: 25px; */
+
   margin: 0;
 }
 
@@ -219,4 +217,3 @@ input[type="radio"].visually-hidden {
   margin-bottom: 70px;
   margin-left: 360px;
 }  */
-

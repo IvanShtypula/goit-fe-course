@@ -214,6 +214,7 @@ input[type="radio"].visually-hidden {
 .collection-title {
   font-size: 48px;
   line-height: 1.2;
+  font-weight: 900;
   letter-spacing: -0.96px;
   color: rgb(81, 81, 81);
   text-transform: uppercase;

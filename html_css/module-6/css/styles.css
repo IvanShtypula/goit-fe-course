@@ -466,11 +466,15 @@ input[type="radio"].visually-hidden {
   border: 1px solid rgb(231, 231, 231);
   width: 234px;
   height: 40px;
+  }
+
+.subscribe-form input::placeholder {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   line-height: 24px;
   font-weight: 300;
   font-style: italic;
+  color: #cccccc;
 }
 
 .subscribe_form_btn {

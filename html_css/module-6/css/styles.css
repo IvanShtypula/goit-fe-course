@@ -378,7 +378,7 @@ input[type="radio"].visually-hidden {
     opacity: 0;
     visibility: hidden;
   }
-  
+
   to {
     opacity: 1;
     visibility: visible;
@@ -393,12 +393,12 @@ input[type="radio"].visually-hidden {
   }
   to {
     transform: translate(-10px, -10px);
+  }
 }
-  }
 
-  .team_list_item_img:hover img{
-    animation: img_animation 1s forwards;
-  }
+.team_list_item_img:hover img {
+  animation: img_animation 1s forwards;
+}
 
 .team_list_item_img:hover .img_overlay {
   animation: overlay_animation 1s forwards;
@@ -410,8 +410,7 @@ input[type="radio"].visually-hidden {
   width: 1200px;
   height: 1px;
   background-color: rgb(229, 229, 229);
-  margin-top: 82px;
-  margin: 82 auto 0 auto;
+  margin: 82px auto 0 auto;
 }
 
 /* FOOTER */

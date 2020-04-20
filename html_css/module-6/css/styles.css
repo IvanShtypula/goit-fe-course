@@ -245,7 +245,7 @@ input[type="radio"].visually-hidden {
 /* TEAM SECTION */
 
 .team_section {
-  padding-bottom: 10px;
+  padding-bottom: 72px;
 }
 
 .team_title {
@@ -418,16 +418,16 @@ input[type="radio"].visually-hidden {
   animation: overlay_animation 1s forwards;
 }
 
-.team::after {
+/* FOOTER */
+
+.site_footer::before {
   content: "";
   display: block;
   width: 1200px;
   height: 1px;
   background-color: rgb(229, 229, 229);
-  margin: 82px auto 0 auto;
+  margin: 0px auto 10px auto;
 }
-
-/* FOOTER */
 
 .footer_block {
   display: flex;

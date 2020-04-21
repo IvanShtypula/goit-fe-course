@@ -466,6 +466,7 @@ input[type="radio"].visually-hidden {
   border: 1px solid rgb(231, 231, 231);
   width: 234px;
   height: 40px;
+  padding-left: 10px;
   }
 
 .subscribe-form input::placeholder {

@@ -1,0 +1,330 @@
+/* FONTS */
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/roboto-slab-v11-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-slab-v11-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* courgette-regular - latin */
+@font-face {
+  font-family: "Courgette";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Courgette Regular"), local("Courgette-Regular"),
+    url("../fonts/courgette-v7-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/courgette-v7-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* General settings */
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* HEADER */
+
+.site_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.navigation_list {
+  display: flex;
+}
+
+.navigation_list_item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.golden_logo {
+  margin: 0;
+  padding: 0;
+}
+
+.golden_logo_link {
+  font-size: 26px;
+  font-family: "Courgette";
+  font-weight: 400;
+  color: rgb(254, 209, 54);
+  line-height: 1.2;
+}
+
+.navigation_list_link {
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  line-height: 1.2;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.navigation_list_link:hover,
+.navigation_list_link:focus {
+  color: rgb(254, 209, 54);
+}
+
+.navigation {
+  padding-top: 48px;
+  padding-bottom: 110px;
+}
+
+/* MAIN */
+
+/* SERVICES */
+
+.services_title_head {
+  font-size: 40px;
+  font-family: "Montserrat";
+  color: rgb(34, 34, 34);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.services_title_description {
+  font-family: "Courgette";
+  font-size: 16px;
+  color: rgb(119, 119, 119);
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.services_list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services_item {
+  width: 290px;
+}
+
+.services_item_title {
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: rgb(34, 34, 34);
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.services_item_description {
+  font-size: 14px;
+  font-family: "RobotoSlab";
+  color: rgb(119, 119, 119);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.services_item_card {
+  margin: 0;
+  padding-top: 124px;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.services_item_card::before {
+  width: 72px;
+  height: 72px;
+  border: 3px solid rgb(254, 209, 54);
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-repeat: no-repeat;
+}
+
+.commerce::before {
+  background-image: url(../images/icons/basket_icon.png);
+  background-position: center;
+}
+
+.web::before {
+  background-image: url(../images/icons/laptop_icon.png);
+  background-position: center;
+}
+
+.security::before {
+  background-image: url(../images/icons/locked_icon.png);
+  background-position: center;
+}
+
+.services {
+  padding-bottom: 118px;
+}
+
+/* CONTACTS */
+
+.contacts_title_head {
+  font-size: 40px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.contacts_title_description {
+  font-family: "Courgette";
+  font-size: 16px;
+  color: rgb(119, 119, 119);
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 74px;
+}
+
+.contacts_section {
+  background-color: rgb(34, 34, 34);
+  background-image: url(../images/bgimages/image.png);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.contacts {
+  padding-top: 110px;
+  padding-bottom: 115px;
+}
+
+/* FORM */
+
+.contacts_form {
+  width: 940px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  }
+
+.required_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 214px;
+}
+.required_list_inputs,
+.contacts_form_message {
+  border: 1px solid rgb(204, 204, 204);
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.required_list_inputs::placeholder,
+.contacts_form_message::placeholder {
+  text-transform: uppercase;
+}
+
+.required_list_inputs {
+  width: 460px;
+  height: 55px;
+  padding-left: 20px;
+  border-radius: 2px;
+}
+
+.contacts_form_message {
+  width: 460px;
+  height: 214px;
+  border-radius: 5px;
+  padding: 20px;
+}
+ .contacts_form_btn {
+  width: 240px;
+  height: 66px;
+  border: 0;
+  border-radius: 3px;
+  background-color: rgb(254, 209, 54);
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin: 30px auto 0 auto;
+ }
+

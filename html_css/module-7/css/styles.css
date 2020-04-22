@@ -307,11 +307,29 @@ input[type="radio"].visually-hidden {
   border-radius: 2px;
 }
 
+.required_list_inputs:focus,
+.contacts_form_message:focus {
+  outline: none;
+}
+
+.required_list_inputs:required:focus:invalid:not(:placeholder-shown),
+.required_list_inputs:required:focus:invalid:not(:placeholder-shown) {
+ border-color: rgb(155, 8, 8);
+}
+
+.required_list_inputs:required:focus:valid:not(:placeholder-shown),
+.required_list_inputs:required:focus:valid:not(:placeholder-shown) {
+  border-color: rgb(9, 129, 9);
+}
+
+
+
 .contacts_form_message {
   width: 460px;
   height: 214px;
   border-radius: 5px;
   padding: 20px;
+  resize: none;
 }
  .contacts_form_btn {
   width: 240px;

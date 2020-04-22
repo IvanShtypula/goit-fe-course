@@ -1,0 +1,157 @@
+/* =====FONTS===== */
+/* roboto-300 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"),
+    url("../fonts/roboto-v20-latin-300.woff2") format("woff2"),
+    url("../fonts/roboto-v20-latin-300.woff") format("woff");
+}
+/* roboto-regular - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("../fonts/roboto-v20-latin-regular.woff2") format("woff2"),
+    url("../fonts/roboto-v20-latin-regular.woff") format("woff");
+}
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+    url("../fonts/montserrat-v14-latin-regular.woff") format("woff");
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+    url("../fonts/montserrat-v14-latin-700.woff") format("woff");
+}
+/* =====General settings===== */
+/* .container {
+  width: 940px;
+  margin: 0 auto;
+} */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+picture {
+  display: block;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* =====HEADER===== */
+
+.page_header {
+  padding: 20px 0 140px 0;
+}
+
+.header {
+  background-image: url(../images/bgimages/banner_s.jpg);
+  background-size: cover;
+}
+
+.container {
+  width: 280px;
+  margin: 0 auto;
+}
+.action_buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 190px;
+  margin: 0 auto 112px auto;
+}
+
+.action_btn {
+  display: inline-block;
+  width: 94px;
+  height: 40px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: transparent;
+  border-radius: 20px;
+}
+.page_name {
+  text-align: center;
+  margin-bottom: 34px;
+}
+.page_name_link {
+  font-size: 20px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+ }
+
+.header_descr {
+  font-size: 30px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -1.1px;
+}
+
+
+/* =====MAIN===== */
+

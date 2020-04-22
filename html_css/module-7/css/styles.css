@@ -305,7 +305,7 @@ input[type="radio"].visually-hidden {
 }
 
 .required_list_items:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .required_list_inputs:focus,

@@ -184,15 +184,14 @@ input[type="radio"].visually-hidden {
 .search_link {
   display: block;
   width: 280px;
-  height: 40px;
-  border: none;
+  border: 2px solid rgb(255, 78, 80);
   border-radius: 20px;
   background-color: rgb(255, 78, 80);
   font-size: 14px;
   font-family: "Montserrat";
   color: rgb(255, 255, 255);
   font-weight: 700;
-  line-height: 40px;
+  line-height: 36px;
   text-align: center;
   margin: 0 auto;
 }
@@ -229,8 +228,8 @@ input[type="radio"].visually-hidden {
 }
 
 .partner_list_item_photo {
-  width: 121px;
-  height: 121px;
+  width: 100%;
+  height: auto;
   border: 1px solid rgb(251, 251, 251);
   border-radius: 50%;
 }
@@ -299,7 +298,6 @@ input[type="radio"].visually-hidden {
 .see_more_link {
   display: block;
   width: 280px;
-  height: 40px;
   border: 2px solid rgb(255, 78, 80);
   border-radius: 20px;
   background-color: rgb(255, 255, 255);
@@ -307,7 +305,7 @@ input[type="radio"].visually-hidden {
   font-family: "Montserrat";
   color: rgb(255, 78, 80);
   font-weight: 700;
-  line-height: 40px;
+  line-height: 36px;
   text-align: center;
   margin: 0 auto;
 }
@@ -327,15 +325,15 @@ input[type="radio"].visually-hidden {
   .partner_list_item:nth-child(1) {
     order: 1;
   }
-  
+
   .partner_list_item:nth-child(2) {
     order: 3;
   }
-  
+
   .partner_list_item:nth-child(3) {
     order: 2;
   }
-  
+
   .partner_list_item:nth-child(4) {
     order: 4;
   }
@@ -386,7 +384,6 @@ input[type="radio"].visually-hidden {
   }
 
   .search_link {
-    display: block;
     width: 226px;
   }
 }
@@ -416,8 +413,7 @@ input[type="radio"].visually-hidden {
 
 .see_more_link {
   width: 197px;
-  height: 44px;
-  line-height: 44px;
+  line-height: 40px;
 }
 
 /* =====DESKTOP===== */
@@ -472,7 +468,6 @@ input[type="radio"].visually-hidden {
 
   .see_more_link {
     width: 196px;
-    height: 44px;
   }
 
   .partner_list {

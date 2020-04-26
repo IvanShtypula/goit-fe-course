@@ -158,8 +158,7 @@ input[type="radio"].visually-hidden {
 
 .header_descr_text {
   display: block;
-  max-width: 220px;
-  font-size: 18px;
+    font-size: 18px;
   font-family: "Roboto";
   color: rgb(255, 255, 255);
   line-height: 1.2;
@@ -200,7 +199,7 @@ input[type="radio"].visually-hidden {
   line-height: 1.2;
   text-align: center;
   margin-bottom: 12px;
-  }
+}
 
 .partner_list {
   margin-bottom: 26px;
@@ -302,18 +301,114 @@ input[type="radio"].visually-hidden {
   .partner_list_item:not(:last-child) {
     margin-bottom: 24px;
   }
+
+  .header_descr_text {
+    max-width: 220px;
+  }
+  
 }
 
 @media (min-width: 768px) {
+  .header {
+    background-image: url(../images/bgimages/banner_m.jpg);
+    padding: 38px 0 230px 0;
+  }
+
+  .header_actions {
+    margin-bottom: 136px;
+  }
+
+  .header_descr_title {
+    max-width: 492px;
+    font-size: 52px;
+    margin: 0 auto 30px auto;
+  }
+
+  .header_descr_text {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+
+  .search_link {
+    width: 226px;
+  }
+
   .action_buttons_wrapper {
     margin: 0;
   }
   .page_name_link {
     margin: 0;
   }
- 
+
+  .partner_list_item:nth-child(1) {
+    order: 1;
+  }
+
+  .partner_list_item:nth-child(2) {
+    order: 3;
+  }
+
+  .partner_list_item:nth-child(3) {
+    order: 2;
+  }
+
+  .partner_list_item:nth-child(4) {
+    order: 4;
+  }
+
+  .page_main {
+    padding: 70px 0 40px 0;
+  }
+
+  .partner_title {
+    margin-bottom: 28px;
+  }
+
+  .partner_list {
+    margin: 0 auto 38px auto;
+  }
+
+  .see_more_link {
+    width: 197px;
+    line-height: 40px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .partner_list_item:not(:nth-child(2n)) {
+    margin-bottom: 54px;
+  }
 }
 
 @media (min-width: 992px) {
-}
 
+  .header {
+    background-image: url(../images/bgimages/banner_l.jpg);
+    padding: 38px 0 232px 0;
+     }
+
+     .header_actions {
+      margin-bottom: 138px;
+    }
+
+    .header_descr_title {
+      max-width: 500px;
+      margin: 0 auto 30px auto;
+    }
+
+    .page_main {
+      padding: 68px 0 72px 0;
+    }
+  
+    .partner_title {
+      margin-bottom: 28px;
+    }
+  
+    .partner_list_item {
+      width: 220px;
+    }
+  
+    .see_more_link {
+      width: 196px;
+    }
+}

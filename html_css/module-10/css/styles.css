@@ -1,3 +1,6 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+
 /* ===General settings=== */
 
 *,
@@ -10,7 +13,8 @@
 }
 
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 ul,
@@ -104,6 +108,19 @@ body {
 /* ===HEADER=== */
 
 .header {
+  background-image: -webkit-gradient(
+      linear,
+      left bottom, left top,
+      from(rgba(252, 227, 138, 0.9)),
+      to(rgba(243, 129, 129, 0.9))
+    ),
+    url("../images/bgimages/vulture.jpg");
+  background-image: -o-linear-gradient(
+      bottom,
+      rgba(252, 227, 138, 0.9),
+      rgba(243, 129, 129, 0.9)
+    ),
+    url("../images/bgimages/vulture.jpg");
   background-image: linear-gradient(
       to top,
       rgba(252, 227, 138, 0.9),
@@ -116,8 +133,21 @@ body {
   padding-bottom: 230px;
 }
 
-@media (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
   .header {
+    background-image: -webkit-gradient(
+        linear,
+        left bottom, left top,
+        from(rgba(252, 227, 138, 0.9)),
+        to(rgba(243, 129, 129, 0.9))
+      ),
+      url("../images/bgimages/vulture@2x.jpg");
+    background-image: -o-linear-gradient(
+        bottom,
+        rgba(252, 227, 138, 0.9),
+        rgba(243, 129, 129, 0.9)
+      ),
+      url("../images/bgimages/vulture@2x.jpg");
     background-image: linear-gradient(
         to top,
         rgba(252, 227, 138, 0.9),
@@ -128,18 +158,28 @@ body {
 }
 
 .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   margin-bottom: 156px;
 }
 
 .navigation__rightpart {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .navigation__list {
   max-width: 540px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -149,8 +189,12 @@ body {
 
 .modal-buttons {
   width: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .modal-buttons__btn {
@@ -173,6 +217,8 @@ body {
 }
 
 .modal-buttons__btn:hover .modal-buttons__btn-icon {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
   fill: rgb(252, 227, 138);
   cursor: pointer;
@@ -212,6 +258,8 @@ body {
 .mogo-logo:focus,
 .header__btn:hover,
 .header__btn:focus {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
   color: rgb(252, 227, 138);
   cursor: pointer;
@@ -219,6 +267,8 @@ body {
 
 .header__btn:hover,
 .header__btn:focus {
+  -webkit-transition: 1s;
+  -o-transition: 1s;
   transition: 1s;
   border: rgb(252, 227, 138);
   background-color: rgb(255, 255, 255);
@@ -226,6 +276,8 @@ body {
 
 .navigation__list-link:hover::after,
 .navigation__list-link:focus::after {
+  -webkit-transition: 1s;
+  -o-transition: 1s;
   transition: 1s;
   opacity: 1;
   visibility: visible;
@@ -312,21 +364,36 @@ body {
 }
 
 .services__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .services__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-basis: 380px;
+  -ms-flex-preferred-size: 380px;
+      flex-basis: 380px;
 }
 
 .services__list-item-icon {
   padding: 0 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 .services__list-item:not(:nth-last-child(-n + 4)) {
@@ -393,14 +460,22 @@ body {
 }
 
 .team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .team__overlay-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 230px;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .overlay__link-icon {
@@ -429,9 +504,15 @@ body {
 
 .team__overlay-list-link {
   display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 56px;
   height: 56px;
   background-color: rgb(252, 227, 138);
@@ -439,9 +520,15 @@ body {
 
 .team__list-item_img {
   margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
 
@@ -468,12 +555,29 @@ body {
 }
 
 .team__overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   width: 100%;
   height: 100%;
+  background: -webkit-gradient(
+    linear,
+    left bottom, left top,
+    from(rgba(252, 227, 138, 0.9)),
+    to(rgba(243, 129, 129, 0.9))
+  );
+  background: -o-linear-gradient(
+    bottom,
+    rgba(252, 227, 138, 0.9),
+    rgba(243, 129, 129, 0.9)
+  );
   background: linear-gradient(
     to top,
     rgba(252, 227, 138, 0.9),
@@ -485,6 +589,8 @@ body {
 
 .team__overlay-list-link:hover,
 .team__overlay-list-link:focus {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
   background-color: rgb(149, 225, 211);
 }
@@ -492,7 +598,25 @@ body {
 .team__overlay-list-link:hover .overlay__link-icon,
 .team__overlay-list-link:focus .overlay__link-icon {
   fill: rgb(255, 255, 255);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
+}
+
+@-webkit-keyframes overlay_animation {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  to {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translate(-10px, -10px);
+            transform: translate(-10px, -10px);
+    -webkit-box-shadow: 10px 10px rgb(149, 225, 211);
+            box-shadow: 10px 10px rgb(149, 225, 211);
+  }
 }
 
 @keyframes overlay_animation {
@@ -504,26 +628,43 @@ body {
   to {
     opacity: 1;
     visibility: visible;
-    transform: translate(-10px, -10px);
-    box-shadow: 10px 10px rgb(149, 225, 211);
+    -webkit-transform: translate(-10px, -10px);
+            transform: translate(-10px, -10px);
+    -webkit-box-shadow: 10px 10px rgb(149, 225, 211);
+            box-shadow: 10px 10px rgb(149, 225, 211);
+  }
+}
+
+@-webkit-keyframes img_animation {
+  from {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  to {
+    -webkit-transform: translate(-10px, -10px);
+            transform: translate(-10px, -10px);
   }
 }
 
 @keyframes img_animation {
   from {
-    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
   }
   to {
-    transform: translate(-10px, -10px);
+    -webkit-transform: translate(-10px, -10px);
+            transform: translate(-10px, -10px);
   }
 }
 
 .team__list-item_img:hover img {
-  animation: img_animation 1s forwards;
+  -webkit-animation: img_animation 1s forwards;
+          animation: img_animation 1s forwards;
 }
 
 .team__list-item_img:hover .team__overlay {
-  animation: overlay_animation 1s forwards;
+  -webkit-animation: overlay_animation 1s forwards;
+          animation: overlay_animation 1s forwards;
 }
 
 /* ===FOOTER=== */
@@ -538,9 +679,15 @@ body {
 }
 
 .footer__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-bottom: 10px;
 }
 
@@ -562,8 +709,12 @@ body {
 }
 
 .subscribe-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 .subscrib-form__input {
@@ -572,6 +723,42 @@ body {
   height: 40px;
   padding-left: 10px;
   }
+
+.subscribe-form__input::-webkit-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 300;
+  font-style: italic;
+  color: #cccccc;
+}
+
+.subscribe-form__input::-moz-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 300;
+  font-style: italic;
+  color: #cccccc;
+}
+
+.subscribe-form__input:-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 300;
+  font-style: italic;
+  color: #cccccc;
+}
+
+.subscribe-form__input::-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 300;
+  font-style: italic;
+  color: #cccccc;
+}
 
 .subscribe-form__input::placeholder {
   font-family: "Roboto", sans-serif;
@@ -597,6 +784,8 @@ body {
 
 .subscribe-form__btn:hover,
 .subscribe-form__btn:hover {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
   background-color: rgb(243, 129, 129);
   cursor: pointer;

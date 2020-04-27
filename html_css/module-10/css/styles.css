@@ -173,6 +173,7 @@ body {
 }
 
 .modal-buttons__btn:hover .modal-buttons__btn-icon {
+  transition: 0.5s;
   fill: rgb(252, 227, 138);
   cursor: pointer;
 }
@@ -484,12 +485,14 @@ body {
 
 .team__overlay-list-link:hover,
 .team__overlay-list-link:focus {
+  transition: 0.5s;
   background-color: rgb(149, 225, 211);
 }
 
 .team__overlay-list-link:hover .overlay__link-icon,
 .team__overlay-list-link:focus .overlay__link-icon {
   fill: rgb(255, 255, 255);
+  transition: 0.5s;
 }
 
 @keyframes overlay_animation {
@@ -594,6 +597,7 @@ body {
 
 .subscribe-form__btn:hover,
 .subscribe-form__btn:hover {
+  transition: 0.5s;
   background-color: rgb(243, 129, 129);
   cursor: pointer;
 }

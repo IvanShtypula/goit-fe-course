@@ -1,63 +1,65 @@
+
 .services {
   padding-top: 44px;
   padding-bottom: 50px;
-}
 
-.services__list {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
+  &__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 
-.services__list-item {
-  display: flex;
-  flex-basis: 380px;
-}
+    &-item {
+      display: flex;
+      flex-basis: 380px;
 
-.services__list-item-icon {
-  padding: 0 25px;
-  display: flex;
-  justify-content: center;
-  align-items: start;
-}
+      &-icon {
+        padding: 0 25px;
+        display: flex;
+        justify-content: center;
+        align-items: start;
 
-.services__list-item:not(:nth-last-child(-n + 4)) {
-  margin-bottom: 100px;
-}
+        &-svg_creativity {
+          width: 32px;
+          height: 28px;
+        }
 
-.services__list-item-title {
-  font-size: 14px;
-  color: $support-text-color;
-  text-transform: uppercase;
-  font-weight: 400;
-  line-height: 1.2;
-  text-align: left;
-  margin-bottom: 16px;
-}
+        &-svg_develop,
+        &-svg_alarm {
+          width: 32px;
+          height: 31px;
+        }
 
-.services__list-item-content {
-  font-size: 15px;
-  font-family: $secondary-font;
-  color: $main-text-color;
-  font-weight: 400;
-  line-height: 1.6;
-  text-align: left;
-}
+        &-svg_digital,
+        &-svg_seo,
+        &-svg_web {
+          width: 32px;
+          height: 32px;
+        }
 
-.services__list-item-icon-svg_creativity {
-  width: 32px;
-  height: 28px;
-}
+      }
 
-.services__list-item-icon-svg_develop,
-.services__list-item-icon-svg_alrm {
-  width: 32px;
-  height: 31px;
-}
+      &:not(:nth-last-child(-n + 4)) {
+        margin-bottom: 100px;
+      }
 
-.services__list-item-icon-svg_digital,
-.services__list-item-icon-svg_seo,
-.services__list-item-icon-svg_web {
-  width: 32px;
-  height: 32px;
+      &-title {
+        font-size: 14px;
+        color: $support-text-color;
+        text-transform: uppercase;
+        font-weight: 400;
+        line-height: 1.2;
+        text-align: left;
+        margin-bottom: 16px;
+      }
+
+      &-content {
+        font-size: 15px;
+        font-family: $secondary-font;
+        color: $main-text-color;
+        font-weight: 400;
+        line-height: 1.6;
+        text-align: left;
+      }
+    }
+  }
 }

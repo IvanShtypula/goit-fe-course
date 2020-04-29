@@ -11,32 +11,22 @@
   padding-bottom: 230px;
 
   &__title {
-    font-size: 72px;
-    font-family: $support-font;
-    color: $secondary-text-color;
-    line-height: 1.2;
-    font-weight: 400;
+    @include font($support-font, 72px, 400, $secondary-text-color, 1.2);
     text-align: center;
     margin-bottom: 42px;
   }
 
   &__description {
+    @include font($main-font, 150px, 700, $secondary-text-color, 1.2);
     max-width: 820px;
     margin: 0 auto 108px auto;
-    font-size: 150px;
-    color: $secondary-text-color;
-    font-weight: 700;
     text-transform: uppercase;
-    line-height: 0.933;
     text-align: center;
   }
 
   &__btn {
-    font-size: 14px;
-    color: $secondary-text-color;
-    font-weight: 700;
+    @include font($main-font, 14px, 700, $secondary-text-color, 38px);
     text-transform: uppercase;
-    line-height: 38px;
     text-align: center;
     width: 164px;
     height: 44px;
@@ -86,12 +76,10 @@
     display: flex;
 
     &-link {
+      @include font($main-font, 14px, 400, $secondary-text-color, 1.2);
       position: relative;
-      font-size: 14px;
-      color: $secondary-text-color;
-      font-weight: 400;
       text-transform: uppercase;
-      line-height: 1.2;
+      
 
       &:hover,
       &:focus {
@@ -158,11 +146,8 @@
 }
 
 .mogo-logo {
-  font-size: 30px;
-  color: $secondary-text-color;
-  font-weight: 700;
-  line-height: 1.2;
-
+  @include font($main-font, 30px, 700, $secondary-text-color, 1.2);
+  
   &:hover,
   &:focus {
     transition: 0.3s;

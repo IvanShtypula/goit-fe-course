@@ -1,6 +1,5 @@
 
 .footer {
-
   &::before {
     content: '';
     display: block;
@@ -19,11 +18,7 @@
 
   &__free-template-resource,
   &__link {
-    font-family: $main-font;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.2;
-    color: $support-text-color;
+    @include font($main-font, 14px, 400, $support-text-color, 1.2);
   }
 
   &__link {
@@ -48,24 +43,17 @@
     padding-left: 10px;
 
     &::placeholder {
-      font-family: $secondary-font;
-      font-size: 15px;
-      line-height: 24px;
-      font-weight: 300;
+      @include font($secondary-font, 15px, 300, $placeholder-text-color, 24px);
       font-style: italic;
-      color: rgb(204, 204, 204);
     }
   }
 
   &__btn {
+    @include font($main-font, 14px, 700, $secondary-text-color, 40px);
     width: 150px;
     height: 40px;
     background-color: $support-color;
-    font-size: 14px;
-    font-weight: 700;
-    color: $secondary-text-color;
     text-transform: uppercase;
-    line-height: 40px;
     text-align: center;
     border: none;
 

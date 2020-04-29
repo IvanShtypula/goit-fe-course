@@ -1,8 +1,8 @@
 .header {
   background-image: linear-gradient(
       to top,
-      rgba(252, 227, 138, 0.9),
-      rgba(243, 129, 129, 0.9)
+      transparentize($main-color, 0.1),
+      transparentize($secondary-color, 0.1)
     ),
     url('../images/vulture.jpg');
   background-repeat: no-repeat;
@@ -15,8 +15,8 @@
   .header {
     background-image: linear-gradient(
         to top,
-        rgba(252, 227, 138, 0.9),
-        rgba(243, 129, 129, 0.9)
+        transparentize($main-color, 0.1),
+        transparentize($secondary-color, 0.1)
       ),
       url('../images/vulture@2x.jpg');
   }
